@@ -1,14 +1,8 @@
-async function asyncHello(name: string): Promise<string> {
+async function test() {
 	return new Promise((resolve) => {
-		setTimeout(() => {
-			resolve(`Hello ${name}`);
-		}, 1000);
+		setTimeout(() => resolve("test"), 1000);
 	});
 }
 
-async function test() {
-	const value = asyncHello("biome");
-	console.log(value);
-}
-
+// Biome has no 'no-floating-promise' rule
 test();

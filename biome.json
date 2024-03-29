@@ -6,9 +6,7 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"suspicious": {
-				"useAwait": "error"
-			}
+			"all": true
 		}
 	}
 }
