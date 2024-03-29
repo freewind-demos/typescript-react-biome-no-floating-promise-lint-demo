@@ -1,10 +1,22 @@
 TypeScript React Biome Require Await Lint Demo
 =================================
 
-Eslint-typescript里有一个我觉得很有用的rule: [no-floating-promises](https://typescript-eslint.io/rules/no-floating-promises/)
+在biome中叫'useAwait'
 
-目前Biome还不支持
+注意，biome中将各种rules进行了分类，在biome.json中配置某个rule时，需要先写其分类：
 
 ```
+"rules": {
+	"suspicious": {
+		"useAwait": "error"
+	}
+}
+```
+
+比如 `useAwait` 是在 `suspicious` 分类下
+
+```
+pnpm run lint
 pnpm run fix
 ```
+
